@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2?family= Lato & display family= Lato:ital,waga@0400;1700 & swap"
+        rel="stylesheet">
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap');
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <h1>Kamień | Papier | Nożyce</h1>
+    </div>
+    <div id="h2">
+        <h2>Wybierz swojego gracza</h2>
+    </div>
+    <div id="choose">
+
+        <div class="ob" id="paper" onclick="load(),paper()">papier</div>
+        <div class="ob" id="rock" onclick="load(),rock()">kamien</div>
+        <div class="ob" id="scissors" onclick="load() ,scissors()">nozyce</div>
+    </div>
+
+
+    <div style="clear:both;"></div>
+
+    <div id="game">
+
+
+        <h3>TY</h3>
+        <div class="players" id="player"></div>
+
+        <div class="players" id="enemy"></div>
+        <h3>Przeciwnik</h3>
+
+    </div>
+
+
+    <div style="clear:both;"></div>
+
+    <div id="score">Wynik</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
