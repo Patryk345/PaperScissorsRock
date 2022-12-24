@@ -34,16 +34,16 @@
 
 <body>
     <div id="header">
-        <h1>Kamień | Papier | Nożyce</h1>
+        <h1>papier | kamień | Nożyce</h1>
     </div>
     <div id="h2">
         <h2>Wybierz swojego gracza</h2>
     </div>
     <div id="choose">
 
-        <div class="ob" id="paper" onclick="load(),paper()">papier</div>
-        <div class="ob" id="rock" onclick="load(),rock()">kamień</div>
-        <div class="ob" id="scissors" onclick="load() ,scissors()">nożyce</div>
+        <div class="ob" id="paper" onclick="load(),paper()"><img src="papier.jpg" /></div>
+        <div class="ob" id="rock" onclick="load(),rock()"><img src="kamien.jpg" /></div>
+        <div class="ob" id="scissors" onclick="load() ,scissors()"><img src="nozyce.jpg" /></div>
     </div>
 
 
@@ -63,7 +63,10 @@
 
     <div style="clear:both;"></div>
 
-    <div id="score">Wynik</div>
+    <div id="score">
+        0-0<br />
+        Wynik
+    </div>
 
     <script src="script.js"></script>
 </body>
