@@ -2,27 +2,30 @@ body {
 	margin: 0;
 	padding: 0;
 
-	background-color: #808080;
-	color: #0831aa;
+	background-color: #ddd;
+	color: #000;
 	font-family: "Lato", sans-serif;
 }
 
 * {
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 h1 {
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	padding: 5px;
-	background: #0831aa;
-	color: #7a7878;
+	padding: 10px;
+	background: #000;
+	color: #dedede;
 	text-align: center;
 	font-weight: 700;
 	width: 100%;
 }
 
 #choose {
+	margin-top: 15px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -33,9 +36,9 @@ h1 {
 	margin-left: auto;
 	margin-right: auto;
 
-	margin: 5px;
-	width: 150px;
-	height: 150px;
+	margin: 10px;
+	width: 180px;
+	height: 180px;
 	background-color: #0831aa;
 	color: #acacac;
 	float: left;
@@ -48,10 +51,12 @@ h1 {
 	-webkit-box-shadow: -0px 0px 20px -5px rgba(66, 68, 90, 1);
 	-moz-box-shadow: -0px 0px 20px -5px rgba(66, 68, 90, 1);
 	box-shadow: -0px 0px 20px -5px rgba(66, 68, 90, 1);
+	transition: all 0.2s ease-in-out;
 }
 
 .ob:hover {
-	opacity: 0.8;
+	transform: scale(1.1);
+
 	cursor: pointer;
 }
 
@@ -66,15 +71,16 @@ h2 {
 	justify-content: center;
 	align-items: center;
 	font-size: 22px;
+	margin-top: 30px;
 }
 img {
-	width: 145px;
-	height: 145px;
+	width: 180px;
+	height: 180px;
 }
 
 .players {
-	width: 150px;
-	height: 150px;
+	width: 180px;
+	height: 180px;
 	border: 3px solid #061088;
 	display: flex;
 	justify-content: center;
@@ -112,8 +118,8 @@ h3 {
 #score {
 	padding: 8px;
 	text-transform: uppercase;
-	background: #0831aa;
-	color: #aba8a8;
+	background: #000;
+	color: #dedede;
 	font-size: 23px;
 	font-weight: 700px;
 	text-align: center;
