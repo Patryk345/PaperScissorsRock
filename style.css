@@ -14,6 +14,8 @@ body {
 }
 
 h1 {
+	margin-left: auto;
+	margin-right: auto;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	padding: 10px;
@@ -37,8 +39,8 @@ h1 {
 	margin-right: auto;
 
 	margin: 10px;
-	width: 180px;
-	height: 180px;
+	width: 10vw;
+	height: 10vw;
 	background-color: #0831aa;
 	color: #acacac;
 	float: left;
@@ -70,17 +72,17 @@ h2 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 22px;
+	font-size: 1.7vw;
 	margin-top: 30px;
 }
 img {
-	width: 180px;
-	height: 180px;
+	width: 10vw;
+	height: 10vw;
 }
 
 .players {
-	width: 180px;
-	height: 180px;
+	width: 10vw;
+	height: 10vw;
 	border: 3px solid #061088;
 	display: flex;
 	justify-content: center;
@@ -120,7 +122,7 @@ h3 {
 	text-transform: uppercase;
 	background: #000;
 	color: #dedede;
-	font-size: 23px;
+	font-size: 1.5vw;
 	font-weight: 700px;
 	text-align: center;
 	margin-top: 50px;
@@ -130,4 +132,66 @@ h3 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+@media only screen and (max-width: 750px) {
+	#score {
+		width: 100%;
+		font-size: 2.3vw;
+	}
+
+	.ob {
+		width: 15vw;
+		height: 15vw;
+	}
+
+	.players {
+		width: 15vw;
+		height: 15vw;
+	}
+	img {
+		width: 15vw;
+		height: 15vw;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	#h2 {
+		font-size: 3vw;
+	}
+
+	#score {
+		width: 100%;
+		font-size: 3.5vw;
+	}
+
+	.ob {
+		width: 25vw;
+		height: 25vw;
+	}
+
+	.players {
+		width: 25vw;
+		height: 25vw;
+	}
+	img {
+		width: 25vw;
+		height: 25vw;
+	}
+
+	#game {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#player {
+		margin-right: 18px;
+		margin-left: 5px;
+	}
+
+	#enemy {
+		margin-left: 18px;
+		margin-right: 5px;
+	}
 }
