@@ -2,6 +2,9 @@ let player = document.querySelector("#player");
 let enemy = document.querySelector("#enemy");
 let score = document.querySelector("#score");
 
+let i = 0;
+let y = 0;
+
 var rand;
 
 function load() {
@@ -23,9 +26,14 @@ function rock() {
 	player.innerHTML = "<img src='kamien.jpg'/>";
 
 	if (rand === 1) {
-		score.innerHTML = "przegrałeś";
-	} else if (rand === 2) score.innerHTML = "remis";
-	else score.innerHTML = "wygrałeś";
+		score.innerHTML = y++;
+		score.innerHTML = i + "-" + y + "<br/>" + "przegrałeś";
+	} else if (rand === 2) {
+		score.innerHTML = i + "-" + y + "<br/>" + "remis";
+	} else {
+		i++;
+		score.innerHTML = i + "-" + y + "<br/>" + "wygrałeś";
+	}
 }
 
 function scissors() {
@@ -34,9 +42,12 @@ function scissors() {
 	player.innerHTML = "<img src='nozyce.jpg'/>";
 
 	if (rand === 1) {
-		score.innerHTML = "wygrałeś";
-	} else if (rand === 2) score.innerHTML = "przegrałeś";
-	else score.innerHTML = "remis";
+		i++;
+		score.innerHTML = i + "-" + y + "<br/>" + "wygrałeś";
+	} else if (rand === 2) {
+		y++;
+		score.innerHTML = i + "-" + y + "<br/>" + "przegrałeś";
+	} else score.innerHTML = i + "-" + y + "<br/>" + "remis";
 }
 
 function paper() {
@@ -45,7 +56,12 @@ function paper() {
 	player.innerHTML = "<img src='papier.jpg'/>";
 
 	if (rand === 1) {
-		score.innerHTML = "remis";
-	} else if (rand === 2) score.innerHTML = "wygrałeś";
-	else score.innerHTML = "przegrałeś";
+		score.innerHTML = i + "-" + y + "<br/>" + "remis";
+	} else if (rand === 2) {
+		i++;
+		score.innerHTML = i + "-" + y + "<br/>" + "wygrałeś";
+	} else {
+		y++;
+		score.innerHTML = i + "-" + y + "<br/>" + "przegrałeś";
+	}
 }
