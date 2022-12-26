@@ -13,11 +13,14 @@
   gtag('config', 'G-9FS0HTLDZS');
 </script>
     
-    <title>Paper Rock Scissors</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <meta name="description"
+        content="Chcesz zagrać w słynną grę Papier Kamień Nożyce? Jeśli tak to świetnie trafiłeś. Gra odbywa się z botem, który losowo wybiera swoją broń. Miłego grania :)" />
+    <meta name="keywords" content="Papier Kamień Nożyce,Paper Rock Scissors,game,for free" />
+    <title>Paper Rock Scissors</title>
     <link rel="stylesheet" href="style.css" />
 
 
@@ -33,41 +36,46 @@
 </head>
 
 <body>
-    <div id="header">
-        <h1>papier | kamień | Nożyce</h1>
+    <div id="container">
+        <header>
+            <div id="header">
+                <h1>papier | kamień | Nożyce</h1>
+            </div>
+        </header>
+        <main>
+            <div id="h2">
+                <h2>Wybierz swojego gracza</h2>
+            </div>
+            <div id="choose">
+
+                <div class="ob" id="paper" onclick="load(),paper()"><img alt="papier" src="papier.jpg" /></div>
+                <div class="ob" id="rock" onclick="load(),rock()"><img alt="kamień" src="kamien.jpg" /></div>
+                <div class="ob" id="scissors" onclick="load() ,scissors()"><img alt="nożyce" src="nozyce.jpg" /></div>
+            </div>
+
+
+            <div style="clear:both;"></div>
+
+            <div id="game">
+
+
+                <h3>TY</h3>
+                <div class="players" id="player"></div>
+
+                <div class="players" id="enemy"></div>
+                <h3>Przeciwnik</h3>
+
+            </div>
+
+
+            <div style="clear:both;"></div>
+
+            <div id="score">
+                0-0<br />
+                Wynik
+            </div>
+        </main>
     </div>
-    <div id="h2">
-        <h2>Wybierz swojego gracza</h2>
-    </div>
-    <div id="choose">
-
-        <div class="ob" id="paper" onclick="load(),paper()"><img src="papier.jpg" /></div>
-        <div class="ob" id="rock" onclick="load(),rock()"><img src="kamien.jpg" /></div>
-        <div class="ob" id="scissors" onclick="load() ,scissors()"><img src="nozyce.jpg" /></div>
-    </div>
-
-
-    <div style="clear:both;"></div>
-
-    <div id="game">
-
-
-        <h3>TY</h3>
-        <div class="players" id="player"></div>
-
-        <div class="players" id="enemy"></div>
-        <h3>Przeciwnik</h3>
-
-    </div>
-
-
-    <div style="clear:both;"></div>
-
-    <div id="score">
-        0-0<br />
-        Wynik
-    </div>
-
     <script src="script.js"></script>
 </body>
 
